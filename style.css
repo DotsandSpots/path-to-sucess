@@ -1,1 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+/* ===== TEST-ONLY CSS (no design) ===== */
+
+/* Base: plain page */
+html, body {
+  background: #fff;
+  color: #000;
+}
+
+/* Typography per your style PDF */
+body { 
+  font-family: "Inter", system-ui, Arial, sans-serif; /* All other text: Inter */
+}
+
+/* H1/H2 use Kavoon; sizes from the PDF */
+h1, h2 { 
+  font-family: "Kavoon", cursive;                    /* H1, H2: Kavoon */
+  font-weight: 400;
+}
+
+/* Sizes (from your PDF): H1 3em, H2 2em, H3 1.5em, H4 1.15em, Nav H2 1.5em */
+h1 { font-size: 3em; }        /* PDF H1 = 3em */
+h2 { font-size: 2em; }        /* PDF H2 = 2em */
+h3 { font-size: 1.5em; }      /* PDF H3 = 1.5em */
+h4 { font-size: 1.15em; }     /* PDF H4 = 1.15em */
+nav h2 { font-size: 1.5em; }  /* PDF Nav H2 = 1.5em */
+
+/* Restore basic spacing so it doesn't look like one blob (not design, just readable) */
+h1, h2, h3, h4 { margin: 0.6em 0 0.4em; }
+p, ul, ol, table { margin: 0.5em 0 1em; }
+
+/* TEST OUTLINES (remove later): lets you "see" structure without styling */
+.site-header, nav, #services, #why, #prices, #firststep, footer {
+  outline: 1px dashed #999;
+}
+.features, .feature, article, .price-table {
+  outline: 1px solid #bbb;
+}

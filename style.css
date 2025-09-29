@@ -9,6 +9,10 @@ h2 {
   line-height: 2em;
 }
 
+* {
+  font-family:Inter;
+}
+
 h3 {
   line-height: 1.5em;
 }

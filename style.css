@@ -122,3 +122,10 @@ section article {
 section article + article {
   margin-top: 1rem;
 }
+
+section article img {
+  display: block;
+  width: 80px;
+  height: auto;
+  margin: 0 auto 1rem auto;
+}

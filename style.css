@@ -1,11 +1,25 @@
 
-/* CSS BY Tyler Hannart */
+/* CSS BY NAME Tyler Hannart */
 
 /* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
 
 /* CSS REST */
 
 /* ROOT VARIABLES */
+:root {
+  --color-teal: #4CA7C0;
+  --color-purple: #484FB7;
+  --color-lavender: #6B8FE7;
+  --color-yellow: #E9BB57;
+  --color-pink: #D9526F;
+  --color-dark: #1E1E1E;
+  --color-white: #ffffff;
+
+  --font-heading: "Kavoon", system-ui;
+  --font-body: "Inter", system-ui;
+}
 
 /* GLOBAL STYLES (mobile first/small) */
+

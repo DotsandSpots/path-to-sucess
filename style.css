@@ -114,7 +114,7 @@ main > section {
 }
 
 main > section > h2 {
-  text-align: center;
+  text-align: left;
   margin-bottom: 1rem;
   color: var(--color-white);
 }
@@ -133,9 +133,9 @@ section article + article {
 
 section article img {
   display: block;
-  width: 80px;
+  width: 100px;
   height: auto;
-  margin: 0 auto 1rem auto;
+  margin: 0 0 1rem 0;
 }
 
 section > section {
@@ -144,49 +144,77 @@ section > section {
 
 .features {
   display: grid;
-  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
   margin: 1rem 0;
 }
 
 .feature {
   background-color: var(--color-white);
-  border: 2px solid var(--color-purple);
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
-  font-weight: 600;
+  font-weight: 800;
+  color: var(--color-dark);
 }
 
-.features .feature:nth-child(even) {
+.features .feature:nth-child(1) {
+  background-color: var(--color-teal);
+}
+
+.features .feature:nth-child(2) {
   background-color: var(--color-lavender);
 }
 
-.price-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1rem 0;
+.features .feature:nth-child(3) {
+  background-color: var(--color-yellow);
+}
+
+.features .feature:nth-child(4) {
   background-color: var(--color-white);
-  border: 2px solid var(--color-purple);
-  border-radius: 10px;
-  overflow: hidden;
 }
 
-.price-table th {
-  background-color: var(--color-purple);
-  color: var(--color-white);
+#why {
+  background: var(--color-pink);
+}
+
+.price-table {
+  width: 90%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  border: 2px solid var(--color-yellow);     
+  background-color: var(--color-white);      
+}
+
+.price-table thead th {
+  background-color: var(--color-yellow);    
+  color: var(--color-dark);
   padding: 0.75rem;
-  text-align: left;
+  text-transform: uppercase;
+  font-weight: 700;                         
 }
 
-.price-table tr:last-child td {
-  border-bottom: none;
-}
+.price-table th,
+.price-table td {
+  border: 3px solid var(--color-yellow);     
+  padding: 0.75rem;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+}      
+
+.price-table tbody th,
+.price-table tbody td {
+  font-weight: 400; 
+}                          
 
 .price-table .price {
-  color: var(--color-purple);
-  font-weight: 700;
-  text-align: right;
+  color: var(--color-dark);
+  font-weight: 400;
+  text-align: center;                        
 }
+
+
+
 
 #firststep {
   background-color: var(--color-pink);
@@ -200,8 +228,8 @@ section > section {
 #firststep .button {
   display: inline-block;
   background-color: var(--color-white);
-  color: var(--color-purple); 
-  padding: 0.75rem 1.25rem;
+  color: var(--color-dark); 
+  padding: 1rem 7rem;
   margin-top: 1rem;
   font-weight: 700;
   text-decoration: none;
@@ -212,4 +240,11 @@ section > section {
 #firststep .button:hover {
   background-color: var(--color-yellow);
   color: var(--color-dark);
+}
+
+#footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-white);
+  margin: 1rem 0;
 }

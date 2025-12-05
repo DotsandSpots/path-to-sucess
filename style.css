@@ -129,3 +129,7 @@ section article img {
   height: auto;
   margin: 0 auto 1rem auto;
 }
+
+section > section {
+  margin: 1rem 0;
+}

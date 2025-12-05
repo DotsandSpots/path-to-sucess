@@ -148,3 +148,7 @@ section > section {
   text-align: center;
   font-weight: 600;
 }
+
+.features .feature:nth-child(even) {
+  background-color: var(--color-lavender);
+}

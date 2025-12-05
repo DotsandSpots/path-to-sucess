@@ -22,4 +22,32 @@
 }
 
 /* GLOBAL STYLES (mobile first/small) */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-lavender);
+  color: var(--color-dark);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: var(--color-purple);
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+header > h1 {
+  font-family: var(--font-heading);
+  font-size: 3em;
+  color: var(--color-white);
+  text-align: center;
+}
+
+header .tagline {
+  text-align: center;
+  color: var(--color-white);
+  margin-top: 0.3rem;
+}
+
 
